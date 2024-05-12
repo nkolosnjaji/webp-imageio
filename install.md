@@ -1,0 +1,1 @@
+./configure --disable-static --disable-png --disable-jpeg --disable-tiff --disable-gif --disable-wic --disable-libwebpdecoder --disable-libwebpextras --disable-libwebpmux --disable-libwebpdemux --disable-sdl --prefix=$HOME/test

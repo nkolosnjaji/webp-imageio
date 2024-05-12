@@ -1,0 +1,922 @@
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+
+--include-constant __API_TO_BE_DEPRECATED             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+--include-constant __API_TO_BE_DEPRECATED_DRIVERKIT   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+--include-constant __API_TO_BE_DEPRECATED_IOS         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+--include-constant __API_TO_BE_DEPRECATED_MACCATALYST # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+--include-constant __API_TO_BE_DEPRECATED_MACOS       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+--include-constant __API_TO_BE_DEPRECATED_TVOS        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+--include-constant __API_TO_BE_DEPRECATED_VISIONOS    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+--include-constant __API_TO_BE_DEPRECATED_WATCHOS     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h
+
+--include-constant __MAC_OS_X_VERSION_MAX_ALLOWED # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h
+
+--include-constant __ENABLE_LEGACY_MAC_AVAILABILITY # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+
+--include-constant MAC_OS_VERSION_11_0      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_11_1      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_11_3      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_11_4      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_11_5      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_11_6      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_0      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_1      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_2      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_3      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_4      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_5      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_6      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_12_7      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_13_0      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_13_1      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_13_2      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_13_3      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_13_4      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_13_5      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_13_6      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_14_0      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_14_1      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_VERSION_14_2      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_0    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_1    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_10   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_10_2 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_10_3 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_11   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_11_2 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_11_3 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_11_4 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_12   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_12_1 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_12_2 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_12_4 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_13   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_13_1 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_13_2 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_13_4 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_14   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_14_1 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_14_4 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_14_5 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_14_6 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_15   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_15_1 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_15_4 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_16   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_2    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_3    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_4    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_5    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_6    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_7    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_8    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant MAC_OS_X_VERSION_10_9    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_2_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_3_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_3_1           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_3_4           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_4_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_4_1           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_5_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_5_1           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_5_3           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_6_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_6_2           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_6_4           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_6_5           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_6_6           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_7_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_7_1           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_7_2           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_7_3           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_7_4           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_7_6           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_8_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_8_1           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __BRIDGEOS_8_2           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_19_0         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_20_0         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_21_0         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_22_0         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_22_4         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_22_5         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_22_6         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_23_0         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_23_1         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __DRIVERKIT_23_2         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_10_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_10_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_10_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_10_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_11_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_11_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_11_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_11_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_11_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_12_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_12_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_12_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_12_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_12_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_13_7            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_7            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_14_8            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_15_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_15_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_15_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_15_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_15_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_15_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_15_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_16_7            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_17_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_17_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_17_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_2_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_2_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_2_2             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_3_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_3_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_3_2             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_4_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_4_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_4_2             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_4_3             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_5_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_5_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_6_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_6_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_7_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_7_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_8_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_8_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_8_2             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_8_3             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_8_4             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_9_0             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_9_1             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_9_2             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __IPHONE_9_3             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_0               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_1               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_10              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_10_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_10_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_11              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_11_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_11_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_11_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_12              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_12_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_12_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_12_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_13              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_13_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_13_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_13_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_14              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_14_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_14_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_14_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_14_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_15              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_15_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_15_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_16              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_2               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_3               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_4               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_5               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_6               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_7               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_8               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_10_9               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_11_0               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_11_1               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_11_3               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_11_4               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_11_5               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_11_6               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_0               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_1               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_2               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_3               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_4               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_5               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_6               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_12_7               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_13_0               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_13_1               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_13_2               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_13_3               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_13_4               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_13_5               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_13_6               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_14_0               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_14_1               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __MAC_14_2               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_10_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_10_0_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_10_1              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_10_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_11_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_11_1              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_11_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_11_3              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_11_4              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_12_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_12_1              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_12_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_12_3              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_12_4              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_13_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_13_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_13_3              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_13_4              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_14_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_14_1              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_14_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_14_3              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_14_5              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_14_6              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_14_7              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_15_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_15_1              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_15_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_15_3              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_15_4              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_15_5              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_15_6              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_16_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_16_1              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_16_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_16_3              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_16_4              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_16_5              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_16_6              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_17_0              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_17_1              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_17_2              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_9_0               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_9_1               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __TVOS_9_2               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __VISIONOS_1_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_10_0           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_10_1           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_10_2           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_1_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_2_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_2_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_2_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_3_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_3_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_3_1_1          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_3_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_4_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_4_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_4_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_4_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_5_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_5_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_5_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_5_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_6_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_6_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_6_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_7_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_7_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_7_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_7_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_7_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_7_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_7_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_8_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_8_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_8_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_8_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_8_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_8_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_8_7            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_9_0            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_9_1            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_9_2            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_9_3            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_9_4            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_9_5            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+--include-constant __WATCHOS_9_6            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+
+--include-typedef __darwin_nl_item    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+--include-typedef __darwin_wctrans_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+--include-typedef __darwin_wctype_t   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+--include-constant _FORTIFY_SOURCE    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+--include-constant __DARWIN_WCHAR_MAX # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+--include-constant __DARWIN_WCHAR_MIN # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+--include-constant __DARWIN_WEOF      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h
+
+--include-typedef intmax_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint16_t.h
+
+--include-typedef uint16_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint16_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h
+
+--include-typedef uint32_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h
+
+--include-typedef uint64_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint8_t.h
+
+--include-typedef uint8_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint8_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h
+
+--include-typedef uintmax_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+
+--include-typedef __darwin_clock_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_ct_rune_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_intptr_t   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_mbstate_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_natural_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_ptrdiff_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_rune_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_size_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_socklen_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_ssize_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_time_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_va_list    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_wchar_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __darwin_wint_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __int16_t           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __int32_t           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __int64_t           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __int8_t            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __mbstate_t         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __uint16_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __uint32_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __uint64_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+--include-typedef __uint8_t           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+
+--include-typedef register_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef syscall_arg_t   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef user_addr_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef user_long_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef user_off_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef user_size_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef user_ssize_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef user_time_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-typedef user_ulong_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+--include-constant USER_ADDR_NULL # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+
+--include-typedef imaxdiv_t                    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-function imaxabs                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-function imaxdiv                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-function strtoimax                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-function strtoumax                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-function wcstoimax                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-function wcstoumax                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIX16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIX32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIX64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIX8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIXPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRId16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRId32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRId64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRId8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIdPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIi16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIi32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIi64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIi8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIiPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIo16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIo32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIo64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIo8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIoPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIu16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIu32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIu64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIu8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIuPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIx16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIx32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIx64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIx8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant PRIxPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNd16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNd32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNd64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNd8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNdPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNi16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNi32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNi64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNi8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNiPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNo16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNo32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNo64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNo8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNoPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNu16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNu32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNu64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNu8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNuPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNx16                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNx32                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNx64                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNx8                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxFAST16                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxFAST32                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxFAST64                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxFAST8                   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxLEAST16                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxLEAST32                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxLEAST64                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxLEAST8                  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxMAX                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant SCNxPTR                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant __PRI_64_LENGTH_MODIFIER__  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant __PRI_8_LENGTH_MODIFIER__   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant __PRI_MAX_LENGTH_MODIFIER__ # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant __SCN_64_LENGTH_MODIFIER__  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+--include-constant __SCN_MAX_LENGTH_MODIFIER__ # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+
+--include-typedef int_fast16_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef int_fast32_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef int_fast64_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef int_fast8_t       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef int_least16_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef int_least32_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef int_least64_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef int_least8_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_fast16_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_fast32_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_fast64_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_fast8_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_least16_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_least32_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_least64_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-typedef uint_least8_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT16_MAX        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT16_MIN        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT32_MAX        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT32_MIN        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT64_MAX        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT64_MIN        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT8_MAX         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT8_MIN         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INTMAX_MAX       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INTMAX_MIN       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INTPTR_MAX       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INTPTR_MIN       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST16_MAX   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST16_MIN   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST32_MAX   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST32_MIN   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST64_MAX   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST64_MIN   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST8_MAX    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_FAST8_MIN    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST16_MAX  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST16_MIN  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST32_MAX  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST32_MIN  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST64_MAX  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST64_MIN  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST8_MAX   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant INT_LEAST8_MIN   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant PTRDIFF_MAX      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant PTRDIFF_MIN      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant RSIZE_MAX        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant SIG_ATOMIC_MAX   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant SIG_ATOMIC_MIN   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant SIZE_MAX         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT16_MAX       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT32_MAX       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT64_MAX       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT8_MAX        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINTMAX_MAX      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINTPTR_MAX      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_FAST16_MAX  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_FAST32_MAX  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_FAST64_MAX  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_FAST8_MAX   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_LEAST16_MAX # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_LEAST32_MAX # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_LEAST64_MAX # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant UINT_LEAST8_MAX  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant WCHAR_MAX        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant WCHAR_MIN        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant WINT_MAX         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant WINT_MIN         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+--include-constant __WORDSIZE       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+
+--include-typedef __darwin_pthread_attr_t        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_cond_t        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_condattr_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_key_t         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_mutex_t       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_mutexattr_t   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_once_t        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_rwlock_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_rwlockattr_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-typedef __darwin_pthread_t             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_ATTR_SIZE__         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_CONDATTR_SIZE__     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_COND_SIZE__         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_MUTEXATTR_SIZE__    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_MUTEX_SIZE__        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_ONCE_SIZE__         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_RWLOCKATTR_SIZE__   # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_RWLOCK_SIZE__       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-constant __PTHREAD_SIZE__              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct __darwin_pthread_handler_rec    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_attr_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_cond_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_condattr_t      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_mutex_t         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_mutexattr_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_once_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_rwlock_t        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_rwlockattr_t    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+--include-struct _opaque_pthread_t               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+
+--include-typedef __darwin_blkcnt_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_blksize_t         # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_dev_t             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_fsblkcnt_t        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_fsfilcnt_t        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_gid_t             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_id_t              # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_ino64_t           # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_ino_t             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_mach_port_name_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_mach_port_t       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_mode_t            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_off_t             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_pid_t             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_sigset_t          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_suseconds_t       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_uid_t             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_useconds_t        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_uuid_string_t     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-typedef __darwin_uuid_t            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+--include-constant __DARWIN_NULL             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h
+
+--include-typedef int16_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h
+
+--include-typedef int32_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h
+
+--include-typedef int64_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h
+
+--include-typedef int8_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h
+
+--include-typedef intptr_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h
+
+--include-typedef u_int16_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h
+
+--include-typedef u_int32_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h
+
+--include-typedef u_int64_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h
+
+--include-typedef u_int8_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h
+
+--include-typedef uintptr_t  # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h
+
+#### Extracted from: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+
+--include-constant _DARWIN_FEATURE_64_BIT_INODE          # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant _DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant _DARWIN_FEATURE_UNIX_CONFORMANCE      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_64_BIT_INO_T                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_C_ANSI                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_C_FULL                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_C_LEVEL                      # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_NON_CANCELABLE               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_NO_LONG_LONG                 # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_ONLY_64_BIT_INO_T            # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_ONLY_UNIX_CONFORMANCE        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_ONLY_VERS_1050               # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_SUF_1050                     # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_SUF_64_BIT_INO_T             # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_SUF_EXTSN                    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_UNIX03                       # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __DARWIN_VERS_1050                    # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __STDC_WANT_LIB_EXT1__                # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+--include-constant __has_ptrcheck                        # header: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
+
+#### Extracted from: /Users/nkolos/playground/jextract-22/conf/jextract/__stddef_max_align_t.h
+
+--include-typedef max_align_t  # header: /Users/nkolos/playground/jextract-22/conf/jextract/__stddef_max_align_t.h
+
+#### Extracted from: /Users/nkolos/playground/jextract-22/conf/jextract/stddef.h
+
+--include-typedef ptrdiff_t  # header: /Users/nkolos/playground/jextract-22/conf/jextract/stddef.h
+--include-typedef size_t     # header: /Users/nkolos/playground/jextract-22/conf/jextract/stddef.h
+--include-typedef wchar_t    # header: /Users/nkolos/playground/jextract-22/conf/jextract/stddef.h
+--include-constant NULL      # header: /Users/nkolos/playground/jextract-22/conf/jextract/stddef.h
+
+#### Extracted from: /usr/local/include/webp/./types.h
+
+--include-function WebPFree   # header: /usr/local/include/webp/./types.h
+--include-function WebPMalloc # header: /usr/local/include/webp/./types.h
+
+#### Extracted from: /usr/local/include/webp/decode.h
+
+--include-function WebPDecode                     # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeARGB                 # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeARGBInto             # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeBGR                  # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeBGRA                 # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeBGRAInto             # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeBGRInto              # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeRGB                  # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeRGBA                 # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeRGBAInto             # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeRGBInto              # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeYUV                  # header: /usr/local/include/webp/decode.h
+--include-function WebPDecodeYUVInto              # header: /usr/local/include/webp/decode.h
+--include-function WebPFreeDecBuffer              # header: /usr/local/include/webp/decode.h
+--include-function WebPGetDecoderVersion          # header: /usr/local/include/webp/decode.h
+--include-function WebPGetFeaturesInternal        # header: /usr/local/include/webp/decode.h
+--include-function WebPGetInfo                    # header: /usr/local/include/webp/decode.h
+--include-function WebPIAppend                    # header: /usr/local/include/webp/decode.h
+--include-function WebPIDecGetRGB                 # header: /usr/local/include/webp/decode.h
+--include-function WebPIDecGetYUVA                # header: /usr/local/include/webp/decode.h
+--include-function WebPIDecode                    # header: /usr/local/include/webp/decode.h
+--include-function WebPIDecodedArea               # header: /usr/local/include/webp/decode.h
+--include-function WebPIDelete                    # header: /usr/local/include/webp/decode.h
+--include-function WebPINewDecoder                # header: /usr/local/include/webp/decode.h
+--include-function WebPINewRGB                    # header: /usr/local/include/webp/decode.h
+--include-function WebPINewYUV                    # header: /usr/local/include/webp/decode.h
+--include-function WebPINewYUVA                   # header: /usr/local/include/webp/decode.h
+--include-function WebPIUpdate                    # header: /usr/local/include/webp/decode.h
+--include-function WebPInitDecBufferInternal      # header: /usr/local/include/webp/decode.h
+--include-function WebPInitDecoderConfigInternal  # header: /usr/local/include/webp/decode.h
+--include-constant MODE_ARGB                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_Argb                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_BGR                       # header: /usr/local/include/webp/decode.h
+--include-constant MODE_BGRA                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_LAST                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_RGB                       # header: /usr/local/include/webp/decode.h
+--include-constant MODE_RGBA                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_RGBA_4444                 # header: /usr/local/include/webp/decode.h
+--include-constant MODE_RGB_565                   # header: /usr/local/include/webp/decode.h
+--include-constant MODE_YUV                       # header: /usr/local/include/webp/decode.h
+--include-constant MODE_YUVA                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_bgrA                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_rgbA                      # header: /usr/local/include/webp/decode.h
+--include-constant MODE_rgbA_4444                 # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_BITSTREAM_ERROR     # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_INVALID_PARAM       # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_NOT_ENOUGH_DATA     # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_OK                  # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_OUT_OF_MEMORY       # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_SUSPENDED           # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_UNSUPPORTED_FEATURE # header: /usr/local/include/webp/decode.h
+--include-constant VP8_STATUS_USER_ABORT          # header: /usr/local/include/webp/decode.h
+--include-constant WEBP_DECODER_ABI_VERSION       # header: /usr/local/include/webp/decode.h
+--include-struct WebPBitstreamFeatures            # header: /usr/local/include/webp/decode.h
+--include-struct WebPDecBuffer                    # header: /usr/local/include/webp/decode.h
+--include-struct WebPDecoderConfig                # header: /usr/local/include/webp/decode.h
+--include-struct WebPDecoderOptions               # header: /usr/local/include/webp/decode.h
+--include-struct WebPIDecoder                     # header: /usr/local/include/webp/decode.h
+--include-struct WebPRGBABuffer                   # header: /usr/local/include/webp/decode.h
+--include-struct WebPYUVABuffer                   # header: /usr/local/include/webp/decode.h
+
+#### Extracted from: /usr/local/include/webp/encode.h
+
+--include-typedef WebPProgressHook                       # header: /usr/local/include/webp/encode.h
+--include-typedef WebPWriterFunction                     # header: /usr/local/include/webp/encode.h
+--include-function WebPBlendAlpha                        # header: /usr/local/include/webp/encode.h
+--include-function WebPCleanupTransparentArea            # header: /usr/local/include/webp/encode.h
+--include-function WebPConfigInitInternal                # header: /usr/local/include/webp/encode.h
+--include-function WebPConfigLosslessPreset              # header: /usr/local/include/webp/encode.h
+--include-function WebPEncode                            # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeBGR                         # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeBGRA                        # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeLosslessBGR                 # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeLosslessBGRA                # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeLosslessRGB                 # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeLosslessRGBA                # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeRGB                         # header: /usr/local/include/webp/encode.h
+--include-function WebPEncodeRGBA                        # header: /usr/local/include/webp/encode.h
+--include-function WebPGetEncoderVersion                 # header: /usr/local/include/webp/encode.h
+--include-function WebPMemoryWrite                       # header: /usr/local/include/webp/encode.h
+--include-function WebPMemoryWriterClear                 # header: /usr/local/include/webp/encode.h
+--include-function WebPMemoryWriterInit                  # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureARGBToYUVA                 # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureARGBToYUVADithered         # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureAlloc                      # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureCopy                       # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureCrop                       # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureDistortion                 # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureFree                       # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureHasTransparency            # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureImportBGR                  # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureImportBGRA                 # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureImportBGRX                 # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureImportRGB                  # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureImportRGBA                 # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureImportRGBX                 # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureInitInternal               # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureIsView                     # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureRescale                    # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureSharpARGBToYUVA            # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureSmartARGBToYUVA            # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureView                       # header: /usr/local/include/webp/encode.h
+--include-function WebPPictureYUVAToARGB                 # header: /usr/local/include/webp/encode.h
+--include-function WebPPlaneDistortion                   # header: /usr/local/include/webp/encode.h
+--include-function WebPValidateConfig                    # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_BAD_DIMENSION           # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_BAD_WRITE               # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_BITSTREAM_OUT_OF_MEMORY # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_FILE_TOO_BIG            # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_INVALID_CONFIGURATION   # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_LAST                    # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_NULL_PARAMETER          # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_OUT_OF_MEMORY           # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_PARTITION0_OVERFLOW     # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_PARTITION_OVERFLOW      # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_ERROR_USER_ABORT              # header: /usr/local/include/webp/encode.h
+--include-constant VP8_ENC_OK                            # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_CSP_ALPHA_BIT                    # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_CSP_UV_MASK                      # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_ENCODER_ABI_VERSION              # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_HINT_DEFAULT                     # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_HINT_GRAPH                       # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_HINT_LAST                        # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_HINT_PHOTO                       # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_HINT_PICTURE                     # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_MAX_DIMENSION                    # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_PRESET_DEFAULT                   # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_PRESET_DRAWING                   # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_PRESET_ICON                      # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_PRESET_PHOTO                     # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_PRESET_PICTURE                   # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_PRESET_TEXT                      # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_YUV420                           # header: /usr/local/include/webp/encode.h
+--include-constant WEBP_YUV420A                          # header: /usr/local/include/webp/encode.h
+--include-struct WebPAuxStats                            # header: /usr/local/include/webp/encode.h
+--include-struct WebPConfig                              # header: /usr/local/include/webp/encode.h
+--include-struct WebPMemoryWriter                        # header: /usr/local/include/webp/encode.h
+--include-struct WebPPicture                             # header: /usr/local/include/webp/encode.h
