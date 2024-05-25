@@ -1,15 +1,12 @@
 package com.nkolosnjaji.webp.imageio;
 
-import com.nkolosnjaji.webp.exceptions.WebPDecodingException;
-import com.nkolosnjaji.webp.exceptions.WebPEncodingException;
-import com.nkolosnjaji.webp.exceptions.WebPFormatException;
-import com.nkolosnjaji.webp.gen.LibWebP;
-import com.nkolosnjaji.webp.gen.WebPBitstreamFeatures;
-import com.nkolosnjaji.webp.gen.WebPDecBuffer;
-import com.nkolosnjaji.webp.gen.WebPPicture;
-import com.nkolosnjaji.webp.gen.WebPRGBABuffer;
+import com.nkolosnjaji.webp.imageio.exceptions.WebPDecodingException;
+import com.nkolosnjaji.webp.imageio.exceptions.WebPEncodingException;
+import com.nkolosnjaji.webp.imageio.exceptions.WebPFormatException;
+import com.nkolosnjaji.webp.imageio.gen.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import javax.imageio.ImageReadParam;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.stream.ImageInputStream;
 import javax.imageio.stream.ImageOutputStream;
@@ -25,19 +22,22 @@ import java.nio.ByteBuffer;
 import java.nio.channels.Channels;
 import java.nio.file.Path;
 
-import static com.nkolosnjaji.webp.gen.LibWebP.WebPFreeDecBuffer;
+import static com.nkolosnjaji.webp.imageio.gen.LibWebP.WebPFreeDecBuffer;
 import static java.awt.image.BufferedImage.TYPE_INT_ARGB;
 import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 
 final class WebP {
 
-    static {
+    private static final Logger logger = LoggerFactory.getLogger(WebP.class);
 
+    static {
         Path libSharpYuv = OsUtils.getPathLibSharpYuv();
         System.load(libSharpYuv.toFile().getAbsolutePath());
 
         Path libWebP = OsUtils.getPathLibWebP();
         System.load(libWebP.toFile().getAbsolutePath());
+
+        logger.debug("WebP library successfully loaded");
     }
 
     public static void encode(RenderedImage image, ImageWriteParam imageWriteParam, Object out) throws IOException {
@@ -63,7 +63,7 @@ final class WebP {
             InternalWriteConfig config = new InternalWriteConfig(arena, param);
             InternalPicture picture = new InternalPicture(arena, image);
 
-            picture.resizeRescale(param);
+            picture.cropAndResize(param);
 
             writer = new InternalWriter(arena, picture);
 
@@ -122,14 +122,14 @@ final class WebP {
                 final boolean hasAlpha = WebPBitstreamFeatures.has_alpha(features) == 1;
                 final boolean hasAnimation = WebPBitstreamFeatures.has_animation(features) == 1;
                 final int format = WebPBitstreamFeatures.format(features);
-                return new Header(width, height, hasAlpha, hasAnimation, format);
+                return new Header(new Dimension(width, height), hasAlpha, hasAnimation, format);
             } else {
                 throw new WebPFormatException();
             }
         }
     }
 
-    public static BufferedImage decode(ImageInputStream iis, Header header, ImageReadParam param) throws IOException {
+    public static BufferedImage decode(ImageInputStream iis, Header header, WebPReaderParam param) throws IOException {
         try (Arena arena = Arena.ofConfined()) {
             InternalReader reader = new InternalReader(arena, header, param);
             MemorySegment rawImage = InternalReader.createRaw(arena, iis);
@@ -149,21 +149,23 @@ final class WebP {
                 byte[] bytes = new byte[byteBuffer.remaining()];
                 byteBuffer.get(bytes);
 
-                return getBufferedImage(header, bytes);
+                Dimension dimension = reader.getImageDimensionAfterDecoding();
+
+                return generateBufferedImage(dimension, bytes, header.hasAlpha());
             } finally {
                 WebPFreeDecBuffer(reader.getBuffer());
             }
         }
     }
 
-    private static BufferedImage getBufferedImage(Header header, byte[] bytes) {
-        int imageType = header.hasAlpha ? TYPE_INT_ARGB : TYPE_INT_RGB;
-        BufferedImage bi = new BufferedImage(header.width(), header.height(), imageType);
+    private static BufferedImage generateBufferedImage(Dimension dimension, byte[] bytes, boolean hasAlpha) {
+        int imageType = hasAlpha ? TYPE_INT_ARGB : TYPE_INT_RGB;
+        BufferedImage bi = new BufferedImage(dimension.width(), dimension.height(), imageType);
 
-        if (header.hasAlpha) {
-            for (int y = 0; y < header.height; y++) {
-                for (int x = 0; x < header.width; x++) {
-                    int index = (y * header.width + x) * 4;
+        if (hasAlpha) {
+            for (int y = 0; y < dimension.height(); y++) {
+                for (int x = 0; x < dimension.width(); x++) {
+                    int index = (y * dimension.width() + x) * 4;
                     int r = bytes[index] & 0xFF;
                     int g = bytes[index + 1] & 0xFF;
                     int b = bytes[index + 2] & 0xFF;
@@ -173,9 +175,9 @@ final class WebP {
                 }
             }
         } else {
-            for (int y = 0; y < header.height; y++) {
-                for (int x = 0; x < header.width; x++) {
-                    int index = (y * header.width + x) * 3;
+            for (int y = 0; y < dimension.height(); y++) {
+                for (int x = 0; x < dimension.width(); x++) {
+                    int index = (y * dimension.width() + x) * 3;
                     int r = bytes[index] & 0xFF;
                     int g = bytes[index + 1] & 0xFF;
                     int b = bytes[index + 2] & 0xFF;
@@ -187,7 +189,7 @@ final class WebP {
         return bi;
     }
 
-    public record Header(int width, int height, boolean hasAlpha, boolean hasAnimation, int format) {
+    public record Header(Dimension dimension, boolean hasAlpha, boolean hasAnimation, int format) {
     }
 
 }

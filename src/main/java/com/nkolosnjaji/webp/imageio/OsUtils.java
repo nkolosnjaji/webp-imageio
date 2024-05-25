@@ -1,6 +1,6 @@
 package com.nkolosnjaji.webp.imageio;
 
-import com.nkolosnjaji.webp.exceptions.WebPInitException;
+import com.nkolosnjaji.webp.imageio.exceptions.WebPInitException;
 
 import java.io.IOException;
 import java.io.InputStream;

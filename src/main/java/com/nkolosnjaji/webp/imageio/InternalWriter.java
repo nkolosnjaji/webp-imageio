@@ -1,9 +1,9 @@
 package com.nkolosnjaji.webp.imageio;
 
-import com.nkolosnjaji.webp.gen.LibWebP;
-import com.nkolosnjaji.webp.gen.WebPMemoryWriter;
-import com.nkolosnjaji.webp.gen.WebPPicture;
-import com.nkolosnjaji.webp.gen.WebPWriterFunction;
+import com.nkolosnjaji.webp.imageio.gen.LibWebP;
+import com.nkolosnjaji.webp.imageio.gen.WebPMemoryWriter;
+import com.nkolosnjaji.webp.imageio.gen.WebPPicture;
+import com.nkolosnjaji.webp.imageio.gen.WebPWriterFunction;
 
 import java.lang.foreign.Arena;
 import java.lang.foreign.MemorySegment;

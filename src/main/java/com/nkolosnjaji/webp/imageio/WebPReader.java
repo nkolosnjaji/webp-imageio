@@ -1,6 +1,6 @@
 package com.nkolosnjaji.webp.imageio;
 
-import com.nkolosnjaji.webp.exceptions.WebPException;
+import com.nkolosnjaji.webp.imageio.exceptions.WebPException;
 
 import javax.imageio.ImageReadParam;
 import javax.imageio.ImageReader;
@@ -18,7 +18,7 @@ public final class WebPReader extends ImageReader {
     public static final String NOT_A_WEB_P_PICTURE = "Can not read image, must be a WebP format";
     private WebP.Header header;
 
-    protected WebPReader(ImageReaderSpi originatingProvider) {
+    WebPReader(ImageReaderSpi originatingProvider) {
         super(originatingProvider);
     }
 
@@ -28,14 +28,18 @@ public final class WebPReader extends ImageReader {
     }
 
     @Override
-    public BufferedImage read(int imageIndex, ImageReadParam param) throws IOException {
+    public BufferedImage read(int imageIndex, ImageReadParam imageReadParam) throws IOException {
         if (imageIndex != 0) {
             throw new IOException("index doesn't exist");
         }
         checkHeader();
-        if (param == null) {
-            param = new WebPReaderParam();
-        }
+
+        WebPReaderParam  param = switch (imageReadParam) {
+            case WebPReaderParam wrp -> wrp;
+            case ImageReadParam _ ->  new WebPReaderParam();
+            case null -> new WebPReaderParam();
+        };
+
         return switch (this.getInput()) {
             case ImageInputStream iis -> WebP.decode(iis, this.header, param);
             case null, default -> throw new IllegalStateException(String.format("Unexpected value: %s", this.getInput().getClass()));
@@ -45,13 +49,13 @@ public final class WebPReader extends ImageReader {
     @Override
     public int getWidth(int imageIndex) throws IOException {
         checkHeader();
-        return this.header.width();
+        return this.header.dimension().width();
     }
 
     @Override
     public int getHeight(int imageIndex) throws IOException {
         checkHeader();
-        return this.header.height();
+        return this.header.dimension().height();
     }
 
     @Override

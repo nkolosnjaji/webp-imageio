@@ -67,7 +67,17 @@ ${JEXTRACT_HOME}/jextract --output src/main/java -t com.nkolosnjaji.webp.gen \
   --include-constant VP8_STATUS_USER_ABORT \
   --include-constant MODE_RGB \
   --include-constant MODE_RGBA \
+  --include-constant WEBP_HINT_DEFAULT \
+  --include-constant WEBP_HINT_GRAPH \
+  --include-constant WEBP_HINT_LAST \
+  --include-constant WEBP_HINT_PHOTO \
+  --include-constant WEBP_HINT_PICTURE \
+  --include-constant WEBP_MAX_DIMENSION \
   libwebp.h
+
+
+
+
 
 
 

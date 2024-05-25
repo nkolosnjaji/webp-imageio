@@ -15,14 +15,31 @@ class TestUtils {
 
     public static final String INPUT_DIR = "src/test/resources/images/input";
 
-    public static final String OUTPUT_DIR = "target/test-classes/images/output";
-
     public static final String CWEBP_DIR = "src/test/resources/images/cwebp";
+
+    public static final String OUTPUT_DIR = "target/test-classes/images/output";
 
     private TestUtils() {
     }
 
-    public static void assertEqualFiles(Path source, Path generated) {
+    public static Path getInputPath(String name) {
+        return WORKING_PATH.resolve(INPUT_DIR, "%s.png".formatted(name));
+    }
+
+    public static Path getGeneratedPath(String name) {
+        return WORKING_PATH.resolve(CWEBP_DIR, "%s.webp".formatted(name));
+    }
+
+    public static Path getOutputPath(String name) {
+        return WORKING_PATH.resolve(OUTPUT_DIR, "%s.webp".formatted(name));
+    }
+
+    public static Path getOutputPath() {
+        return WORKING_PATH.resolve(OUTPUT_DIR);
+    }
+
+    public static void assertEqualFiles(Path source, String imageName) {
+        Path generated = getGeneratedPath(imageName);
         byte[] sourceBytes = assertDoesNotThrow(() -> Files.readAllBytes(source));
         byte[] generatedBytes = assertDoesNotThrow(() -> Files.readAllBytes(generated));
 

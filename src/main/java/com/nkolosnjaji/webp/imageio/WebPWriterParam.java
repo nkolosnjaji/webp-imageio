@@ -9,27 +9,33 @@ public final class WebPWriterParam extends ImageWriteParam {
 
     public static final Set<String> compressions = Set.of(WebPWriter.COMPRESSION_LOSSLESS, WebPWriter.COMPRESSION_LOSSY);
 
+    private Integer method;
+    private WebPWriterPreset preset;
+    private WebPWriterHint imageHint;
 
+    private Boolean multiThreading;
+    private Crop crop = null;
+    private Resize resize = null;
 
     public WebPWriterParam() {
-        this(DEFAULT_COMPRESSION_QUALITY);
+        this(DEFAULT_COMPRESSION_QUALITY, WebPWriterPreset.DEFAULT);
     }
 
     public WebPWriterParam(WebPWriterPreset preset) {
-        this(preset, DEFAULT_COMPRESSION_QUALITY);
+        this(DEFAULT_COMPRESSION_QUALITY, preset);
     }
 
     public WebPWriterParam(float compressionQuality) {
-        this(WebPWriterPreset.DEFAULT, compressionQuality);
+        this(compressionQuality, WebPWriterPreset.DEFAULT);
     }
 
-    public WebPWriterParam(WebPWriterPreset preset, float compressionQuality) {
+    public WebPWriterParam(float compressionQuality, WebPWriterPreset preset) {
         super.canWriteCompressed = true;
         super.compressionTypes = compressions.toArray(String[]::new);
         super.setCompressionMode(MODE_EXPLICIT);
         super.setCompressionType(WebPWriter.COMPRESSION_LOSSY);
         super.setCompressionQuality(compressionQuality);
-        this.preset = preset;
+        this.setPreset(preset);
     }
 
     @Override
@@ -37,13 +43,7 @@ public final class WebPWriterParam extends ImageWriteParam {
         super.setCompressionQuality(quality);
     }
 
-    private Integer method;
-    private WebPWriterPreset preset;
-    private WebPWriterHint imageHint;
 
-    private Boolean  multiThreading;
-    private Crop crop = null;
-    private Resize resize = null;
     public Crop getCrop() {
         return crop;
     }
@@ -104,11 +104,7 @@ public final class WebPWriterParam extends ImageWriteParam {
         DEFAULT,
         PICTURE,
         PHOTO,
-        GRAPH,
-        LAST
+        GRAPH
     }
 
-    public record Crop(int x, int y, int w, int h) {}
-
-    public record Resize(int w, int h) {}
 }

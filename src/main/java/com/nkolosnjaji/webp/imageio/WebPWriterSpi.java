@@ -4,6 +4,7 @@ import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.ImageWriter;
 import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageOutputStream;
+import java.awt.image.DataBuffer;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Locale;
@@ -33,7 +34,7 @@ public final class WebPWriterSpi extends ImageWriterSpi {
 
     @Override
     public boolean canEncodeImage(ImageTypeSpecifier type) {
-        return true;
+        return type.getSampleModel().getDataType() == DataBuffer.TYPE_BYTE;
     }
 
     @Override

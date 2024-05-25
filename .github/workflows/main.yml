@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-14, macos-12]
+        include:
+          - suffix: so
+            os: ubuntu-latest
+            platform: linux
+            arch: x86_64
+            install_tools_command: sudo apt-get update && sudo apt-get install gcc make autoconf automake libtool
+          - suffix: dylib
+            os: macos-12
+            platform: mac
+            arch: x86_64
+            install_tools_command: brew install gcc make autoconf automake libtool
+          - suffix: dylib
+            os: macos-14
+            platform: mac
+            arch: aarm64
+            install_tools_command: brew install gcc make autoconf automake libtool
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Install tools
+        run: ${{ matrix.install_tools_command }}
+      - name: Build WebP lib
+        working-directory: ./libwebp
+        run: |
+          ./autogen.sh
+          ./configure \
+          --disable-static \
+          --disable-png \
+          --disable-jpeg \
+          --disable-tiff \
+          --disable-gif \
+          --disable-wic \
+          --disable-libwebpdecoder \
+          --disable-libwebpextras \
+          --disable-libwebpmux \
+          --disable-libwebpdemux \
+          --disable-sdl \
+          --prefix=/tmp/webp-java-imageio/
+          make
+          make install
+      - name: Copy WebP
+        run: |
+          cp /tmp/webp-java-imageio/lib/libsharpyuv.${{ matrix.suffix }} ${GITHUB_WORKSPACE}/src/main/resources/lib/${{ matrix.platform }}/${{ matrix.arch }}
+          cp /tmp/webp-java-imageio/lib/libwebp.${{ matrix.suffix }} ${GITHUB_WORKSPACE}/src/main/resources/lib/${{ matrix.platform }}/${{ matrix.arch }}
+      - name: Setup JAVA
+        uses: actions/setup-java@v4
+        with:
+          java-version: '22'
+          distribution: 'temurin'
+      - name: Build JAVA
+        run: mvn -ntp clean verify
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: libwebp_${{ matrix.os }}_${{ matrix.arch }}
+          path: |
+            /tmp/webp-java-imageio/lib/libsharpyuv.${{ matrix.suffix }}
+            /tmp/webp-java-imageio/lib/libwebp.${{ matrix.suffix }}
+            ${GITHUB_WORKSPACE}/target/*.jar
+   

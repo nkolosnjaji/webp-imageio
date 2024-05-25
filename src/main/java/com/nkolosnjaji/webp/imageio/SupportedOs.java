@@ -2,7 +2,7 @@ package com.nkolosnjaji.webp.imageio;
 
 enum SupportedOs {
 
-    LINUX_AMD_64("linux", "amd64", "so"),
+    LINUX_AMD_64("unix", "amd64", "so"),
     MAC_X86_64("mac", "x86_64", "dylib"),
     MAC_AARM_64("mac", "aarm64", "dylib"),
     WIN_AMD_64("windows", "amd64", "dll");

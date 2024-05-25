@@ -6,15 +6,14 @@ import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageWriterSpi;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-public class WebPWriter extends ImageWriter {
+public final class WebPWriter extends ImageWriter {
 
     public static final String COMPRESSION_LOSSY = "Lossy";
     public static final String COMPRESSION_LOSSLESS = "Lossless";
 
-    protected WebPWriter(ImageWriterSpi originatingProvider) {
+    WebPWriter(ImageWriterSpi originatingProvider) {
         super(originatingProvider);
     }
 
