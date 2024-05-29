@@ -19,7 +19,7 @@ jobs:
         include:
           - suffix: so
             os: ubuntu-latest
-            platform: linux
+            platform: unix
             arch: x86_64
             install_tools_command: sudo apt-get update && sudo apt-get install gcc make autoconf automake libtool
           - suffix: dylib
