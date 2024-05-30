@@ -15,7 +15,46 @@
         <slf4j-api.version>2.0.13</slf4j-api.version>
         <junit-bom.version>5.10.2</junit-bom.version>
         <logback-core.version>1.5.6</logback-core.version>
+
     </properties>
+
+    <profiles>
+        <profile>
+            <id>mac-aarch64</id>
+            <activation>
+                <os>
+                    <family>Mac</family>
+                </os>
+            </activation>
+            <properties>
+                <os-family>mac</os-family>
+            </properties>
+        </profile>
+        <profile>
+            <id>mac-x86_64</id>
+            <activation>
+                <os>
+                    <family>mac</family>
+                    <arch>x86_64</arch>
+                </os>
+            </activation>
+            <properties>
+                <os-family>mac</os-family>
+            </properties>
+        </profile>
+        <profile>
+            <id>unix-x86_64</id>
+            <activation>
+                <os>
+                    <family>unix</family>
+                    <arch>x86_64</arch>
+                </os>
+            </activation>
+            <properties>
+                <os-family>unix</os-family>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
@@ -30,6 +69,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
+                    <classifier>${os-family}_${os.arch}</classifier>
                     <archive>
                         <manifestEntries>
                             <Enable-Native-Access>ALL-UNNAMED</Enable-Native-Access>
@@ -52,7 +92,6 @@
             <version>${logback-core.version}</version>
             <scope>test</scope>
         </dependency>
-
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
