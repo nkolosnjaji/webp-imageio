@@ -62,6 +62,8 @@ jobs:
           mkdir -p ${GITHUB_WORKSPACE}/target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
           cp /tmp/webp-java-imageio/lib/libsharpyuv.${{ matrix.suffix }} ${GITHUB_WORKSPACE}/target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
           cp /tmp/webp-java-imageio/lib/libwebp.${{ matrix.suffix }} ${GITHUB_WORKSPACE}/target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
+          ls -lah ${GITHUB_WORKSPACE}/target/
+          ls
       - name: Setup JAVA
         uses: actions/setup-java@v4
         with:
@@ -69,6 +71,10 @@ jobs:
           distribution: 'temurin'
       - name: Build JAVA
         run: mvn -ntp verify
+      - name: debug
+        run: |
+          ls 
+          ls target
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
