@@ -13,7 +13,6 @@
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j-api.version>2.0.13</slf4j-api.version>
-        <logback-classic.version>1.5.6</logback-classic.version>
         <junit-bom.version>5.10.2</junit-bom.version>
         <logback-core.version>1.5.6</logback-core.version>
     </properties>

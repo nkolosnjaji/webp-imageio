@@ -73,4 +73,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./target/*.jar
+          name: webp-imageio_${{ matrix.platform }}_${{ matrix.arch }}
    
