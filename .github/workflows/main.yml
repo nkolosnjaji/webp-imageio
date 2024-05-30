@@ -59,12 +59,9 @@ jobs:
           make install
       - name: Copy WebP
         run: |
-          echo ${GITHUB_WORKSPACE}/target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
-          mkdir -p ${GITHUB_WORKSPACE}/target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
-          cp /tmp/webp-java-imageio/lib/libsharpyuv.${{ matrix.suffix }} ${GITHUB_WORKSPACE}/target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
-          cp /tmp/webp-java-imageio/lib/libwebp.${{ matrix.suffix }} ${GITHUB_WORKSPACE}/target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
-          ls -lah ${GITHUB_WORKSPACE}/target/
-          ls
+          mkdir -p ./target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
+          cp /tmp/webp-java-imageio/lib/libsharpyuv.${{ matrix.suffix }} ./target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
+          cp /tmp/webp-java-imageio/lib/libwebp.${{ matrix.suffix }} ./target/classes/lib/${{ matrix.platform }}/${{ matrix.arch }}
       - name: Setup JAVA
         uses: actions/setup-java@v4
         with:
@@ -72,12 +69,8 @@ jobs:
           distribution: 'temurin'
       - name: Build JAVA
         run: mvn -ntp verify
-      - name: debug
-        run: |
-          ls 
-          ls target
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          path: ${GITHUB_WORKSPACE}/target/*.jar
+          path: ./target/*.jar
    
