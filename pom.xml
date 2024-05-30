@@ -111,4 +111,10 @@
         </dependencies>
     </dependencyManagement>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+        </repository>
+    </distributionManagement>
+
 </project>
