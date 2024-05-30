@@ -72,9 +72,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: libwebp_${{ matrix.os }}_${{ matrix.arch }}
-          path: |
-            /tmp/webp-java-imageio/lib/libsharpyuv.${{ matrix.suffix }}
-            /tmp/webp-java-imageio/lib/libwebp.${{ matrix.suffix }}
-            ${GITHUB_WORKSPACE}/target/*.jar
+          path: ${GITHUB_WORKSPACE}/target/*.jar
    
