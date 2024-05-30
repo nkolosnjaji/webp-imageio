@@ -123,12 +123,12 @@
         </dependencies>
     </dependencyManagement>
 
-<!--    <distributionManagement>-->
-<!--        <repository>-->
-<!--            <id>github</id>-->
-<!--            <name>GitHub OWNER Apache Maven Packages</name>-->
-<!--            <url>https://maven.pkg.github.com/nkolosnjaji/webp-imageio</url>-->
-<!--        </repository>-->
-<!--    </distributionManagement>-->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub NKolosnjaji Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/nkolosnjaji/webp-imageio</url>
+        </repository>
+    </distributionManagement>
 
 </project>

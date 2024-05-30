@@ -68,6 +68,8 @@ jobs:
           java-version: '22'
           distribution: 'temurin'
       - name: Build JAVA
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: mvn -ntp deploy
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
