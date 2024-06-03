@@ -13,8 +13,6 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
-    permissions:
-      packages: write
     strategy:
       matrix:
         os: [ubuntu-latest, macos-14, macos-12]
@@ -34,6 +32,9 @@ jobs:
             platform: mac
             arch: aarm64
             install_tools_command: brew install gcc make autoconf automake libtool
+    permissions:
+      contents: read
+      packages: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -72,7 +73,7 @@ jobs:
       - name: Build JAVA
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn -ntp deploy
+        run: mvn --no-transfer-progress --batch-mode deploy
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
