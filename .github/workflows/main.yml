@@ -69,7 +69,6 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '22'
-          package: jre
           distribution: temurin
           check-latest: true
           server-id: ossrh
