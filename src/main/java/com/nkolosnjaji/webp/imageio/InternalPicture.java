@@ -39,7 +39,7 @@ class InternalPicture {
 
         if (importResult != 1) {
             this.free();
-            throw new WebPException("Error allocating picture"); // TODO
+            throw new WebPException("Error allocating picture");
         }
     }
 

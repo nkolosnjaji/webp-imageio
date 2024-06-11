@@ -6,7 +6,10 @@
 
     <groupId>com.nkolosnjaji</groupId>
     <artifactId>webp-imageio</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>WebP Java ImageIO reader and writer using project Panama</description>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
@@ -19,6 +22,27 @@
     </properties>
 
     <profiles>
+        <profile>
+            <id>cicd</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.5</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>mac-aarch64</id>
             <activation>
@@ -59,6 +83,31 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -124,11 +173,35 @@
     </dependencyManagement>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
         <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/nkolosnjaji/webp-imageio</url>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <licenses>
+        <license>
+            <name>BSD-3-Clause license</name>
+            <url>http://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>nikkol1985</id>
+            <name>Nikola Kološnjaji</name>
+            <email>nikkol1985@yahoo.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/nkolosnjaji/webp-imageio.git</connection>
+        <developerConnection>scm:git:https://github.com/nkolosnjaji/webp-imageio.git</developerConnection>
+        <url>https://github.com/nkolosnjaji/webp-imageio/tree/main</url>
+    </scm>
 
 </project>

@@ -63,6 +63,7 @@ final class WebP {
             InternalWriteConfig config = new InternalWriteConfig(arena, param);
             InternalPicture picture = new InternalPicture(arena, image);
 
+            // add 'missing' for-each crop value
             picture.cropAndResize(param);
 
             writer = new InternalWriter(arena, picture);

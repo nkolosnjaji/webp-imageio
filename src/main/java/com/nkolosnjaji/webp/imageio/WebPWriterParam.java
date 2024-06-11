@@ -14,6 +14,7 @@ public final class WebPWriterParam extends ImageWriteParam {
     private WebPWriterHint imageHint;
 
     private Boolean multiThreading;
+    private Boolean lowMemory;
     private Crop crop = null;
     private Resize resize = null;
 
@@ -38,15 +39,10 @@ public final class WebPWriterParam extends ImageWriteParam {
         this.setPreset(preset);
     }
 
-    @Override
-    public void setCompressionQuality(float quality) {
-        super.setCompressionQuality(quality);
-    }
-
-
     public Crop getCrop() {
         return crop;
     }
+
     public void setCrop(Crop crop) {
         this.crop = crop;
     }
@@ -89,6 +85,14 @@ public final class WebPWriterParam extends ImageWriteParam {
 
     public void setResize(Resize resize) {
         this.resize = resize;
+    }
+
+    public Boolean getLowMemory() {
+        return lowMemory;
+    }
+
+    public void setLowMemory(Boolean lowMemory) {
+        this.lowMemory = lowMemory;
     }
 
     public enum WebPWriterPreset {

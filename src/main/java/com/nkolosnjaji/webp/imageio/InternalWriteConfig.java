@@ -33,6 +33,10 @@ class InternalWriteConfig {
         if(Boolean.TRUE.equals(param.getMultiThreading())) {
             WebPConfig.thread_level(this.ms, 1);
         }
+        if(Boolean.TRUE.equals(param.getLowMemory())) {
+            WebPConfig.low_memory(this.ms, 1);
+        }
+
     }
 
     public MemorySegment getMemorySegment() {

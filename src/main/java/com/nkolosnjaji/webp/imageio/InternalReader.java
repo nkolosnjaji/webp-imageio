@@ -48,7 +48,7 @@ class InternalReader {
             WebPDecoderOptions.flip(WebPDecoderConfig.options(this.ms), 1);
         }
 
-        if(Boolean.TRUE.equals(imageReadParam.getMultiThreading())) {
+        if (Boolean.TRUE.equals(imageReadParam.getMultiThreading())) {
             WebPDecoderOptions.use_threads(WebPDecoderConfig.options(this.ms), 1);
         }
 
