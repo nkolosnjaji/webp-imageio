@@ -9,4 +9,8 @@ public class WebPInitException extends WebPException {
     public WebPInitException(Throwable throwable) {
         super("WebP java init failed", throwable);
     }
+
+    public WebPInitException(String message, Throwable throwable) {
+        super(message, throwable);
+    }
 }

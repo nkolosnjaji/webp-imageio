@@ -22,23 +22,19 @@ public class OsUtils {
 
     private static Path getLibPath(String libName) {
         SupportedOs os = SupportedOs.getCurrent();
-        Path tempLocation = Path.of("/tmp/webp-java-imageio/lib/%s.%s".formatted(libName, os.suffix));
-        try {
-            Files.createDirectories(tempLocation.getParent());
-        } catch (IOException e) {
-            throw new WebPInitException(e);
-        }
 
         try (InputStream lib = OsUtils.class.getResourceAsStream(getClassPathResource(libName, os))) {
+            Path tempLocation = Files.createTempFile(libName,os.suffix);
             if (lib != null) {
                 Files.copy(lib, tempLocation, StandardCopyOption.REPLACE_EXISTING);
+                tempLocation.toFile().deleteOnExit();
+                return tempLocation;
             }
             else throw new WebPInitException("Not found");
         } catch (IOException e) {
             throw new WebPInitException(e);
         }
-        tempLocation.toFile().deleteOnExit();
-        return tempLocation;
+
     }
 
     private static String getClassPathResource(String libName, SupportedOs os) {
